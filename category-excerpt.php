@@ -20,10 +20,10 @@
 
 			<?php echo paginate_links(); ?>
 
-			<p>Template: category-9.php</p>
+			<p>Template: category-excerpt.php</p>
 		</main>
 	</div>
 
-<?php get_footer('splash'); ?>
+<?php get_footer(); ?>
 
 

@@ -1,12 +1,8 @@
 <?php get_header(); ?>
-	<div id="primary" class="content-area extended">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main"> 
 
-			<h1>
-				<?php the_archive_title();  ?>
-				<?php esc_html_e(' Posts Only!', 'wphierarchy')?>
-			</h1>
-			<p><?php echo category_description(); ?></p>
+			<h1><?php the_archive_title();  ?></h1>
 
 			<?php if(have_posts()) : while(have_posts()) : the_post();?>
 
@@ -20,10 +16,11 @@
 
 			<?php echo paginate_links(); ?>
 
-			<p>Template: category-9.php</p>
+			<p>Template: date.php</p>
 		</main>
 	</div>
 
-<?php get_footer('splash'); ?>
+	<?php get_sidebar(); ?>
+<?php get_footer(); ?>
 
 
