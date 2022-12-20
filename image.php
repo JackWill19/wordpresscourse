@@ -17,7 +17,7 @@
 
           <div class="entry-content">
 
-            <p><img src="<?php echo $post->guid; ?>" alt="<?php echo get_the_excerpt(); ?>"></img></p>
+            <p><img src="<?php echo esc_url($post->guid); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"></img></p>
 
             <?php the_content(); ?>
 
